@@ -9,7 +9,7 @@ image_dir = r"C:\Users\nmukaida\Desktop\0627ボックスカルバート"
 prs = Presentation()
 
 # フォルダ内の全ての.pngファイルに対してループを行う
-for filename in os.listdir(image_dir):
+for filename in sorted(os.listdir(image_dir)):
     if filename.endswith(".png"):
         # 新しいスライドを作成（レイアウトは「タイトルとコンテンツ」）
         slide_layout = prs.slide_layouts[1] 
