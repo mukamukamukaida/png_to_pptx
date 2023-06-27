@@ -17,8 +17,8 @@ for filename in os.listdir(image_dir):
 
         # タイトルにファイル名を設定
         title = slide.shapes.title
-        title.text = filename
-        #aaaaaaaaa
+        title.text = os.path.splitext(filename)[0]
+        
         # コンテンツ部分に画像を設定
         left = Inches(0.79)
         top = Inches(1.8)
